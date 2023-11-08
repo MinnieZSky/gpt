@@ -95,7 +95,7 @@ export const useUpdateStore = createPersistStore(
                   if (version === remoteId) {
                     // Show a notification using Tauri
                     window.__TAURI__?.notification.sendNotification({
-                      title: "ChatGPT Next Web",
+                      title: "智慧小熊猫",
                       body: `${Locale.Settings.Update.IsLatest}`,
                       icon: `${ChatGptIcon.src}`,
                       sound: "Default"
@@ -104,7 +104,7 @@ export const useUpdateStore = createPersistStore(
                     const updateMessage = Locale.Settings.Update.FoundUpdate(`${remoteId}`);
                     // Show a notification for the new version using Tauri
                     window.__TAURI__?.notification.sendNotification({
-                      title: "ChatGPT Next Web",
+                      title: "智慧小熊猫",
                       body: updateMessage,
                       icon: `${ChatGptIcon.src}`,
                       sound: "Default"
